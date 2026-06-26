@@ -13,10 +13,6 @@ if (user) {
     document.getElementById('prof-id').innerText = user.id;
 }
 
-document.getElementById('alert-btn').addEventListener('click', () => {
-    tg.showAlert(`Halo ${user ? user.first_name : 'Teman'}! Ini notifikasi bawaan Telegram.`);
-});
-
 function gantiTab(tabName, elemenNav) {
     if (tg.HapticFeedback) {
         tg.HapticFeedback.impactOccurred('light');
